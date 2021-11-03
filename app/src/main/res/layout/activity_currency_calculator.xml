@@ -10,7 +10,7 @@
         android:id="@+id/tv_heading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Currency Calculator"
+        android:text="Currency Convertor"
         android:textAlignment="center"
         android:textColor="@color/purple_500"
         android:textSize="24sp"
