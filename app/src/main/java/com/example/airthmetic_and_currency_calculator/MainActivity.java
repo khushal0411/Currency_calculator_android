@@ -9,14 +9,23 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-Button next;
+Button btn_currency_calc,btn_calc;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        next=findViewById(R.id.next);
+        btn_currency_calc=findViewById(R.id.btn_currency_calc);
+        btn_calc=findViewById(R.id.btn_calc);
+        btn_calc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
-        next.setOnClickListener(new View.OnClickListener() {
+                Intent intent=new Intent(MainActivity.this,Calculator.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_currency_calc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(MainActivity.this,currency_calculator.class);

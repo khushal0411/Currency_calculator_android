@@ -7,11 +7,38 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/next"
+        android:id="@+id/btn_currency_calc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="Click To use Currency Converter"
+        app:backgroundTint="#D63B3B"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_calc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click To use Calculator"
+        app:backgroundTint="#D63B3B"
+        app:layout_constraintBottom_toTopOf="@+id/btn_currency_calc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.877" />
+
+    <TextView
+        android:id="@+id/tv_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HomePage"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        android:textColor="#E21412"
+        app:layout_constraintBottom_toTopOf="@+id/btn_calc"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

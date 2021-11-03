@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F3EFEF"
     tools:context=".currency_calculator">
 
     <TextView
         android:id="@+id/tv_heading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Currency Convertor"
+        android:text="Currency Converter"
         android:textAlignment="center"
         android:textColor="@color/purple_500"
         android:textSize="24sp"
@@ -102,6 +103,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="260dp"
         android:text="Calculate"
+        app:backgroundTint="#D63B3B"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -120,4 +122,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_submit"
         app:layout_constraintVertical_bias="0.224" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#F6F0F0"
+        app:backgroundTint="#D63B3B"
+        android:text="Back To Home Page"
+        android:textColor="#EFECEC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_result" />
 </androidx.constraintlayout.widget.ConstraintLayout>

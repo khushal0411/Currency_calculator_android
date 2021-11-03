@@ -2,6 +2,7 @@ package com.example.airthmetic_and_currency_calculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Adapter;
@@ -22,6 +23,7 @@ public class currency_calculator extends AppCompatActivity
     EditText num;
     int error =0;
     double amt;
+    Button btn_back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +34,15 @@ public class currency_calculator extends AppCompatActivity
         Spinner spin2=findViewById(R.id.spin_convertto);
         Button submit=findViewById(R.id.btn_submit);
         num=findViewById(R.id.et_num);
+        btn_back=findViewById(R.id.btn_back);
 
+        btn_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(currency_calculator.this,MainActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
         ArrayAdapter ad= new ArrayAdapter(this, android.R.layout.simple_spinner_item,CurrencyFrom);
