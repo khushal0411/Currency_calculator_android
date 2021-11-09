@@ -13,6 +13,7 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.Toolbar;
 
 public class currency_calculator extends AppCompatActivity
 {
@@ -25,6 +26,7 @@ public class currency_calculator extends AppCompatActivity
     double amt;
     Button btn_back;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +37,8 @@ public class currency_calculator extends AppCompatActivity
         Button submit=findViewById(R.id.btn_submit);
         num=findViewById(R.id.et_num);
         btn_back=findViewById(R.id.btn_back);
+
+
 
         btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
